@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calicut Stories | Taste and Tales of Malabar</title>
+    <meta name="description"
+        content="Welcome to Calicut Stories, a traditional Malabari restaurant by Brokadan Group of Companies. Experience the exquisite Taste and Tales of Malabar in a premium dining experience.">
+    <meta name="keywords"
+        content="Calicut Stories, Malabari cuisine, Brokadan Group, restaurant, Doha Street, Lulu Muwaileh, Karama, traditional food">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400&family=Great+Vibes&family=Pacifico&family=Lobster&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.jpeg" alt="Calicut Stories Logo" class="logo-img">
+            </a>
+            <div class="nav-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">Our Story</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="#locations" class="nav-link">Locations</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#reservation" class="btn btn-nav">Book a Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg-wrapper"></div>
+        <div class="hero-overlay"></div>
+        <canvas id="smokeCanvas"></canvas>
+        <div class="container hero-content">
+            <h1 class="luxury-title">Calicut Stories</h1>
+            <p class="tagline luxury-tagline luxury-shimmer">Taste and Tales of Malabar</p>
+            <div class="hero-buttons animate-reveal delay-2">
+                <a href="#reservation" class="btn btn-luxury-red">Reserve Table</a>
+                <a href="#menu" class="btn btn-luxury-outline">Explore Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container about-container">
+            <div class="about-text reveal">
+                <span class="story-minimal-badge">Our Heritage</span>
+                <h2>A Tradition of Excellence</h2>
+                <p>Welcome to <strong>Calicut Stories</strong>, where every dish is a chapter in the rich culinary
+                    history of the Malabar coast. We bring the authentic, time-honored recipes of our ancestors right to
+                    your table, emphasizing traditional roots and a deep connection to Malabari culture.</p>
+                <p>As a proud venture of the <strong>Brokadan Group of Companies</strong>, we are committed to
+                    uncompromising quality and absolute authenticity. Our dedication ensures that every dining
+                    experience is a journey through the vibrant flavors and aromatic spices of the region, carrying the
+                    warmth of our heritage.</p>
+                <a href="#menu" class="link-btn mt-3">Discover Our Flavors <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="about-images reveal reveal-right">
+                <img src="restaurant karama.jpeg" alt="Restaurant Interior" class="img-main">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes/Story Section -->
+    <section class="section quotes parallax" id="quotes">
+        <div class="quotes-overlay"></div>
+        <div class="container quotes-container reveal">
+            <img src="gathered.jpeg" alt="People gathering" class="quote-bg-image">
+            <div class="quote-box">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <blockquote>
+                    Gathered around the table, stories told, memories are created and love is abundantly grown.
+                </blockquote>
+                <cite>&mdash; Brokadan</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-title text-center reveal">
+                <span class="subtitle">Culinary Masterpieces</span>
+                <h2>Taste of Malabar</h2>
+                <p class="section-desc">Experience our signature traditional dishes, meticulously crafted with unique
+                    ingredients and profound Malabari influences.</p>
+            </div>
+
+            <!-- Menu Categories Filter -->
+            <div class="menu-filter-wrapper reveal">
+                <ul class="menu-filter">
+                    <li class="filter-item active" data-filter="all">All Dishes</li>
+                    <li class="filter-item" data-filter="traditions">Traditions</li>
+                    <li class="filter-item" data-filter="mains">Signature Mains</li>
+                    <li class="filter-item" data-filter="starters">Starters & Sides</li>
+                    <li class="filter-item" data-filter="beverages">Beverages</li>
+                </ul>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Traditions -->
+                <div class="menu-card reveal-serve traditions non-veg" data-name="Thalassery Biriyani"
+                    data-price="AED 45"
+                    data-description="Our iconic traditional biriyani made with fragrant Khaima rice, tender meat, and a unique blend of Malabari spices, slow-cooked to perfection in the authentic dum style.">
+                    <div class="menu-img-wrapper">
+                        <img src="biriyani.jpeg" alt="Thalassery Biriyani" class="menu-img">
+                        <div class="dish-marker non-veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Thalassery Biriyani</h3>
+                        <p>Our iconic traditional biriyani made with fragrant Khaima rice, tender meat, and a unique
+                            blend of Malabari spices.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-serve delay-1 traditions veg" data-name="Traditional Ila Sadhya"
+                    data-price="AED 35"
+                    data-description="A grand feast served on a banana leaf featuring a vibrant array of vegetarian dishes, pickles, papadam, and palada payasam, representing the true essence of Kerala festive dining.">
+                    <div class="menu-img-wrapper">
+                        <img src="ila sadhya.jpeg" alt="Ila Sadhya" class="menu-img">
+                        <div class="dish-marker veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Traditional Ila Sadhya</h3>
+                        <p>A grand feast served on a banana leaf featuring a vibrant array of vegetarian dishes and
+                            payasam.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-serve delay-2 traditions veg" data-name="Puttu & Kadala Curry"
+                    data-price="AED 24"
+                    data-description="A quintessential Kerala breakfast. Steamed rice flour cylinders layered with fresh coconut (Puttu), served with a rich and spiced black chickpea curry (Kadala).">
+                    <div class="menu-img-wrapper">
+                        <img src="puttum kadalem.jpeg" alt="Puttu & Kadala Curry" class="menu-img">
+                        <div class="dish-marker veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Puttu & Kadala Curry</h3>
+                        <p>Steamed rice flour cylinders layered with coconut, served with a spiced black chickpea curry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Starters -->
+                <div class="menu-card reveal-serve starters veg" data-name="Mango Salad" data-price="AED 22"
+                    data-description="A refreshing and vibrant salad featuring raw mango juliennes, garden fresh vegetables, and a hint of bird's eye chili for a kick.">
+                    <div class="menu-img-wrapper">
+                        <img src="mango salad.jpeg" alt="Mango Salad" class="menu-img">
+                        <div class="dish-marker veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Mango Salad</h3>
+                        <p>A refreshing and vibrant salad featuring raw mango juliennes and garden fresh vegetables.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-serve delay-1 starters veg" data-name="Pazham Pori" data-price="AED 12"
+                    data-description="The iconic Kerala snack of sweet, ripe plantains coated in a golden-brown crispy batter. A perfect balance of sweetness and crunch, iconic to Malabar teashops.">
+                    <div class="menu-img-wrapper">
+                        <img src="pazham pori.jpeg" alt="Pazham Pori" class="menu-img">
+                        <div class="dish-marker veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Pazham Pori</h3>
+                        <p>Iconic Kerala snack of sweet, ripe plantains coated in a golden-brown crispy batter.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-serve delay-2 starters non-veg" data-name="Prawns Fry" data-price="AED 48"
+                    data-description="Fresh coastal prawns marinated in a fiery blend of Malabar spices, curry leaves, and coconut oil, then shallow fried to crispy, aromatic perfection.">
+                    <div class="menu-img-wrapper">
+                        <img src="prawns fry.jpeg" alt="Prawns Fry" class="menu-img">
+                        <div class="dish-marker non-veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Prawns Fry</h3>
+                        <p>Fresh coastal prawns marinated in fiery spices and shallow fried to crispy perfection.</p>
+                    </div>
+                </div>
+
+                <!-- Mains -->
+                <div class="menu-card reveal-serve mains non-veg" data-name="Malabari Chicken Curry" data-price="AED 38"
+                    data-description="Rich, aromatic, and deeply flavorful curry prepared with roasted coconut and our proprietary spice mix, best enjoyed with flaky Malabar porottas.">
+                    <div class="menu-img-wrapper">
+                        <img src="chicken curry.jpeg" alt="Malabari Chicken Curry" class="menu-img">
+                        <div class="dish-marker non-veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Malabari Chicken Curry</h3>
+                        <p>Rich, aromatic, and deeply flavorful curry prepared with roasted coconut and spices.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-serve delay-1 mains non-veg" data-name="Charcoal Specialties"
+                    data-price="AED 42"
+                    data-description="Succulent chicken and meats marinated in tantalizing coastal spices and perfectly grilled over slow charcoal fire to give a smoky, mouth-watering finish.">
+                    <div class="menu-img-wrapper">
+                        <img src="charcoal.jpeg" alt="Charcoal Grill" class="menu-img">
+                        <div class="dish-marker non-veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Charcoal Specialties</h3>
+                        <p>Succulent chicken and meats marinated in tantalizing spices and perfectly grilled over
+                            charcoal.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-serve delay-2 mains non-veg" data-name="Butter Chicken" data-price="AED 36"
+                    data-description="Creamy, rich, and slightly sweet tomato-based curry featuring tender chicken pieces, finished with a touch of butter and fresh cream.">
+                    <div class="menu-img-wrapper">
+                        <img src="butterchicken.jpeg" alt="Butter Chicken" class="menu-img">
+                        <div class="dish-marker non-veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Butter Chicken</h3>
+                        <p>Creamy, rich, and slightly sweet tomato-based curry featuring tender chicken.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-serve delay-3 mains non-veg" data-name="Fish Mango Curry"
+                    data-price="AED 48"
+                    data-description="A tangy, mouth-watering delicacy where fresh seasonal fish is cooked with raw mango, coconut milk, and aromatic coastal spices.">
+                    <div class="menu-img-wrapper">
+                        <img src="fish mango curry.jpeg" alt="Fish Mango Curry" class="menu-img">
+                        <div class="dish-marker non-veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Fish Mango Curry</h3>
+                        <p>A tangy, mouth-watering delicacy where fresh fish is cooked with raw mango and coastal
+                            spices.</p>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-card reveal-serve beverages veg" data-name="Malabari Chaya" data-price="AED 8"
+                    data-description="Our traditional strong, frothy tea, infused with local spices, an undisputed staple of Malabar evenings. Prepared with a signature 'pull' for perfect foam.">
+                    <div class="menu-img-wrapper">
+                        <img src="chaya.jpeg" alt="Malabari Chaya" class="menu-img">
+                        <div class="dish-marker veg"></div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Malabari Chaya</h3>
+                        <p>Our traditional strong, frothy tea, infused with local spices, a staple of Malabar evenings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-title text-center reveal">
+                <span class="subtitle">Testimonials</span>
+                <h2>What Our Guests Say</h2>
+                <p class="section-desc">Read the stories of those who have experienced the magic of Malabari culinary
+                    heritage with us.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card reveal">
+                    <div class="review-header">
+                        <div class="reviewer-img">
+                            <img src="reviewer_1.png" alt="James Miller">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>James Miller</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <p>"The best Malabar food I've had in Dubai. The Fish Mango Curry is a revelation – perfectly
+                            balanced spices and fresh mango. Simply stellar!"</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card reveal delay-1">
+                    <div class="review-header">
+                        <div class="reviewer-img">
+                            <img src="people around the table.jpeg" alt="Reviewer 2">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Sara Ahmed</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <p>"Authentic flavors and a wonderful atmosphere. The Malabari Chaya reminded me exactly of the
+                            local tea stalls back in Calicut. Highly recommend for foodies!"</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card reveal delay-2">
+                    <div class="review-header">
+                        <div class="reviewer-img">
+                            <img src="restaurant sharjah.jpeg" alt="Reviewer 3">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Rahul Verma</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <p>"Calicut Stories never disappoints. The Prawns Fry is crispy, spicy, and absolutely
+                            addictive.
+                            The attention to traditional roots is what sets them apart."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="section locations bg-light" id="locations">
+        <div class="container">
+            <div class="section-title text-center reveal">
+                <span class="subtitle">Find Us</span>
+                <h2>Our Locations</h2>
+            </div>
+
+            <div class="locations-grid">
+                <!-- Location 1 -->
+                <div class="location-card reveal">
+                    <div class="location-img">
+                        <img src="restaurant sharjah.jpeg" alt="Lulu Muwaileh - Sharjah">
+                    </div>
+                    <div class="location-content">
+                        <h3>Sharjah</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Lulu Muwaileh, Sharjah</p>
+                        <p class="hours"><i class="far fa-clock"></i> 11:30 AM - 12:00 AM</p>
+                        <a href="https://maps.google.com" target="_blank" class="link-btn">Get Directions <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="location-card reveal delay-1">
+                    <div class="location-img">
+                        <img src="qusais.jpeg" alt="Doha Street - Al Qusais">
+                    </div>
+                    <div class="location-content">
+                        <h3>Dubai</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Doha Street, Al Qusais</p>
+                        <p class="hours"><i class="far fa-clock"></i> 11:30 AM - 12:00 AM</p>
+                        <a href="https://maps.google.com" target="_blank" class="link-btn">Get Directions <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Location 3 -->
+                <div class="location-card reveal delay-2 featured-location">
+                    <div class="badge">Newly Opened</div>
+                    <div class="location-img">
+                        <img src="karama outdoorr.jpeg" alt="Newly opened in Karama">
+                    </div>
+                    <div class="location-content">
+                        <h3>Karama</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Al Karama, Dubai</p>
+                        <p class="hours"><i class="far fa-clock"></i> 12:00 PM - 1:00 AM</p>
+                        <a href="https://maps.google.com" target="_blank" class="link-btn">Get Directions <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container reveal mt-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115594.383188849!2d55.150659957386046!3d25.127547141380927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation & Contact Section -->
+    <section class="section reservation-contact" id="reservation">
+        <div class="container dual-section">
+
+            <!-- Reservation Form -->
+            <div class="reservation-form-container reveal">
+                <div class="section-title">
+                    <span class="subtitle">Join Us</span>
+                    <h2>Book a Table</h2>
+                    <p>Reserve your spot to experience the exceptional taste of Malabar.</p>
+                </div>
+                <form id="bookingForm" class="custom-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Your Full Name">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <input type="email" id="email" required placeholder="Email Address">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group half">
+                            <input type="tel" id="phone" required placeholder="Phone Number">
+                            <label for="phone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <input type="date" id="date" required>
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="form-group half">
+                            <select id="time" required>
+                                <option value="" disabled selected>Time</option>
+                                <option value="lunch">12:00 PM - Lunch</option>
+                                <option value="lunch2">1:30 PM - Lunch</option>
+                                <option value="dinner">7:00 PM - Dinner</option>
+                                <option value="dinner2">8:30 PM - Dinner</option>
+                                <option value="dinner3">10:00 PM - Dinner</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="location" required>
+                            <option value="" disabled selected>Select Location</option>
+                            <option value="karama">Karama</option>
+                            <option value="qusais">Doha Street - Al Qusais</option>
+                            <option value="sharjah">Lulu Muwaileh - Sharjah</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="guests" min="1" max="20" required placeholder="Number of Guests">
+                        <label for="guests">Guests</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Confirm Reservation</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-container reveal reveal-right" id="contact">
+                <div class="contact-card">
+                    <h2>Contact Information</h2>
+                    <p>We'd love to hear from you. Reach out for any inquiries.</p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
+                            <div class="content-wrap">
+                                <strong>Call Us</strong>
+                                <span>+971 4 123 4567</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                            <div class="content-wrap">
+                                <strong>Email Us</strong>
+                                <span>info@calicutstories.com</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="content-wrap">
+                                <strong>Head Office</strong>
+                                <span>Brokadan Group, Dubai, UAE</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="logo.jpeg" alt="Calicut Stories Logo" class="footer-logo">
+                <p>Taste and Tales of Malabar.</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Calicut Stories. A Venture of Brokadan Group of Companies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menu Detail Modal -->
+    <div id="menu-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-img-container">
+                    <img src="" alt="" id="modal-img">
+                </div>
+                <div class="modal-text">
+                    <h2 id="modal-title"></h2>
+                    <span class="modal-price" id="modal-price"></span>
+                    <p id="modal-desc"></p>
+                    <div class="modal-actions">
+                        <a href="#reservation" class="btn btn-primary modal-close-trigger">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
